@@ -1,0 +1,267 @@
+@media only screen and (max-width:480px){
+	header img {
+		margin-left: 10px;
+		border-radius: 50%;
+		height: 50px;
+		margin-top: 10px;
+	}
+	header h1 {
+		margin-left: 80px;
+		margin-top: 10px;
+	}
+.nav_mobile, .closebtn{
+	display: block;
+}
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay li {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+  padding-left: 60%;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+  color: #fff;
+}
+.overlay a {
+	font-size: 20px
+}
+  .overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
+  .nav_mobile{
+  	color: #fff;
+  	font-size:25px;
+  	cursor:pointer;
+  	float: right;
+  	margin-top: 20px;
+  	margin-right: 30px;
+  }
+
+ #pocetna{
+ 	background-position-x: 50%;
+ 	min-height: 350px;
+ }
+ 
+ #newsletter h2{
+ 	padding-left: 10px;
+ 	padding-right: 10px;
+ 	text-align: center;
+ 
+ }
+
+ #newsletter form{
+ 	float: none;
+ 	position: static;
+ }
+#newsletter form button{
+	margin: 0;
+	margin-top: 10px;
+	margin-bottom: 20px;
+	position: relative;
+	left:50%;
+	transform: translateX(-50%);
+}
+
+#boxes {
+	width: 90%;
+}
+#boxes .box {
+	float: none;
+	width: 100%;
+	margin: auto;
+	margin-bottom: 20px;
+	min-height: 625px;
+}
+#boxes .box img {
+	height: 250px;
+}
+
+#pomoc {
+	margin-top: 40px;
+}
+#pomoc .box {
+	float: none;
+	width: 100%;
+	margin: auto;
+	margin-bottom: 10px;
+	min-height: 250px;
+}
+
+.ukloniti_mobitel{
+	display: none;
+}
+
+/*Proizvodi*/
+
+#main_proizvodi #kuhinje{
+	width: 100%;
+}
+#kuhinje .slike {
+	width: 90%;
+	margin: auto;
+	float: none;
+}
+#kuhinje .desc_kuhinje {
+	width: 90%;
+	margin: auto;
+	float: none;
+}
+#main_proizvodi #ormari{
+	width: 100%;
+	margin-bottom: 30px;
+}
+#ormari .slike {
+	width: 90%;
+	margin: auto;
+	margin-bottom: 20px;
+	float: none;
+}
+#ormari .desc_kuhinje {
+	width: 90%;
+	margin: auto;
+	float: none;
+}
+#main_proizvodi #komode{
+	width: 100%;
+}
+#komode .slike {
+	width: 90%;
+	margin: auto;
+	float: none;
+}
+#komode .desc_kuhinje {
+	width: 90%;
+	margin: auto;
+	float: none;
+}
+#main_proizvodi #ostalo{
+	width: 100%;
+	margin-bottom: 30px;
+}
+#ostalo .slike {
+	width: 90%;
+	margin: auto;
+	margin-bottom: 20px;
+	float: none;
+}
+#ostalo .desc_kuhinje {
+	width: 90%;
+	margin: auto;
+	float: none;
+}
+/*KONTAKT*/
+
+#main_kontakt{
+	width: 100%;
+}
+#main_kontakt #kontakt, #main_kontakt #forma{
+	float: none;
+	margin: auto;
+	width: 90%;
+}
+#main_kontakt ul {
+	width: 100%;
+	padding: 0 0 20px 10px;
+	float:none;
+	margin: auto;
+}
+#main_kontakt iframe {
+	width: 90%;
+}
+#forma form {
+	margin-top: 10px;
+	margin-right: 0;
+	padding: 0 0 0 0px;
+	margin-left: 5%;
+	width: 100%;
+}
+#forma form input{
+	margin-right: 0;
+	}
+#forma form textarea{
+	margin-right: 0;
+}
+#forma form input[name="ime"]{
+	width: 90%;
+}
+#forma form input[name="prezime"]{
+	width: 90%	;
+	float: none;
+	margin-right: 0;
+}
+.dodati_mobitel {
+	display: block;
+}
+#pomoc_k{
+	margin-top: 470px;
+}
+footer{
+	height: 400px;
+	}
+	footer ul {
+		margin: 0;
+		padding: 0;
+	}
+	footer img {
+		width: 100px;
+		height: 100px;
+		left: 5%;
+	}
+	footer .d_mreze {
+		left: 15%;
+		top: 5%;
+	}
+	footer .r_vrijeme{
+		top: 40%;
+		left: 5%;
+	}
+	footer p {
+		text-align: center;
+		margin-left: 10px;
+		bottom: 0px;
+		left: 25%;
+	}
+	footer .footer_pocetna{
+		bottom: 20px;
+		right: -10px;
+		font-size: 25px;
+		margin-right: 35px;
+		position: fixed;
+	}
+
+
+}
