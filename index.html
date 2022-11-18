@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Ideal namještaj</title>
+	<link rel="icon" type="image/x-icon" href="img/logo.jpg">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/mobile.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<header>
+	<a href="#"><img src="img/logo.jpg"></a>
+	<h1>I<span class="oznaceno">DEAL</span></h1>
+	<span class="nav_mobile" onclick="openNav()">&#9776;</span>
+	<nav id="myNav" class="overlay">
+		 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		<ul class="overlay-content">
+			<li><a href="#" class="oznaceno">Pocetna</a></li>	
+			<li><a href="o_nama.html">O nama</a></li>
+			<li><a href="proizvodi.html">Proizvodi</a></li>
+			<li><a href="kontakt.html">Kontakt</a></li>
+		</ul>
+	</nav>
+	</header>
+
+	<section id="pocetna">
+	</section>
+	<section id="newsletter">
+		<h2>Kontaktirajte nas za mjere i ponudu već danas!</h2>
+		<form>
+			<button onclick="location.href='mailto:idealbih387@gmail.com?subject=Potražnja ponude';">ZATRAŽITE PONUDU</button>
+		</form>
+	</section>
+
+
+	<section id="boxes">
+	<h2><span class="oznaceno">IDEAL</span>AN NAMJEŠTAJ ZA VAŠ DOM</h2>
+
+		<div class="box">
+			<img src="img/kuhinja12.png">
+			<div class="desc">
+				<h2>Kuhinje</h2>
+				<p>Kuhinja predstavlja središnji prostor doma.To je mjesto na kom se sjedinjuju različiti ukusi i mirisi sa ljubavlju koja dijeli jedna porodica. Zbog toga je potrebno da ona bude uređena tako da Vam omogući da se ovaj spoj događa svaki dan. Imajući na umu da zajednički obrok zbližava članove porodice, za Vas smo pripremili komade različitih dimenzija, boja i stilova koji će osigurati da pripremanje svakog jela bude uživanje.</p>
+				<a href="proizvodi.html#kuhinje"><button>KUHINJE</button></a>
+			</div>
+		</div>
+		<div class="box">
+			<img src="img/ormar14.png">
+			<div class="desc">
+				<h2>Ormari</h2>
+				<p>Ormari ti pomažu s organizacijom odjeće, cipela i bilo čega drugog što želiš pospremiti na praktičan i elegantan način. Brojni naši ormari uključuju i unutarnje organizatore, poput šipki za odjeću i polica koje će ti pomoći organizirati stvari.</p>
+				<a href="proizvodi.html#ormari"><button>ORMARI</button></a>
+			</div>
+		</div>
+		<div class="box">
+			<img src="img/komoda13.png">
+			<div class="desc">
+				<h2>Komode</h2>
+				<p>Odabirom elegantne i funkcionalne komode koja upotpunjuje Vašu prostoriju osigurajte sebi uvijek koristan dodatni prostor za pohranu stvari. Nakon ulaska u stan ili kuću obično prvo vidimo ormare, komode i ladičare. Oni predstavljaju mjesto gdje spremamo svoje cipele i odjeću, ali i mjesto gdje možeš pronaći razne papuče za goste. Komode se već neko vrijeme smatraju neophodnim elementima modernog namještaja i pokućstva.</p>
+				<a href="proizvodi.html#komode"><button>KOMODE</button></a>
+			</div>
+		</div>
+	</section>
+	<section id="pomoc">
+			<div class="box">
+			<i class="fa fa-question-circle-o"> Savjeti i pomoć</i>
+			<p>Treba li vam savjet ili pomoć u bilo kojem trenutku, prije, tokom ili nakon kupnje? Pomoć možete zatražiti osobnim dolaskom u prodajne salone, putem telefona ili e-maila.</p>
+			</div>
+			<div class="box">
+				<i class="fa fa-truck"> Dostava</i>
+				<p>Svu kupljenu robu isporučujemo vlastitim prevozom i to besplatno do 50 km udaljenosti, a preko u dogovoru sa kupcem.</p>
+			</div>
+			<div class="box">
+				<i class="fa fa-wrench"> Montaža</i>
+				<p>Za montažu namještaja kod kojeg je preporučljivo unajmiti stručnjaka (kao što je slučaj kod spavaćih soba, Kuhinja itd.), rado ćemo Vam pomoći i ponuditi da Vam naši monteri namontiraju namještaj po povoljnim cijenama</p>
+			</div>
+			<div class="box">
+				<i class="fa fa-heart-o"> Garancija</i>
+				<p>Nudimo granciju na namještaj 12 mjeseci, ako se budete ravnali prema datim uputama. Na bijelu tehniku (BEKO) garancija je 5 godina.</p>
+			</div>
+	</section>
+
+<footer>
+	<img src="img/logo.jpg">
+			<ul class="d_mreze">
+				<h2>Pratite nas:</h2>
+				<li><a href="https://www.facebook.com/ideal.bih"><i class="fa fa-facebook-square"></i> Ideal Namještaj</a></li>
+				<li><a href="https://www.instagram.com/ideal.bih"><i class="fa fa-instagram"></i> ideal-bih</a></li>
+			</ul>
+			<ul class="r_vrijeme">
+				<h2>Radno vrijeme:</h2>
+				<li>Ponedjeljak - Petak: 07:00 - 17:00</li>
+				<li>Subota: 07:00 - 15:00</li>
+				<li>Nedjelja: neradni dan</li>
+			</ul>
+			<p>BIM Design &copy 2022</p>
+			<div class="footer_pocetna">
+				<a href="#"><i class="fa fa-long-arrow-up oznaceno"> <span class="ukloniti_mobitel">Pocetak</span></i></a>
+			</div>
+	</footer>
+
+	<script>
+function openNav() {
+  document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+}
+</script>
+</body>
+</html>
