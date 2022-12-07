@@ -5,46 +5,73 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>O nama - Ideal</title>
 	<link rel="icon" type="image/x-icon" href="img/logo.jpg">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/6.6.6/css/flag-icons.min.css" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/style768-1024.css">
 	<link rel="stylesheet" type="text/css" href="css/mobile.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+
 </head>
 <body>
+	<div id="bos">
+
 <header>
 	<a href="index.html"><img src="img/logo.jpg"></a>
-	<h1>I<span class="oznaceno">DEAL</span></h1>
+	<h1><span class = "i">i</span><span class="oznaceno">DEAL</span></h1>
+	<div class="dropdown_j_mob dropbtn_j dodati_mobitel jezici">
+	  				<button onclick="myFunction_dropbtn_mobitel()" class="dropbtn_j dropbtn_j_mob"> <i class="fi fi-ba"></i><i class="fa fa-angle-down	
+										dolje_j"></i> </button>
+  					<div id="myDropdown_j_mob" class="dropdown-content_j dropdown-content_j_mob">
+						    <a href="javascript:void(0)" onclick="change_language_eng()" ><i class="fi fi-gb"></i> EN</a>
+    						<a href="#home" ><i class="fi fi-de"></i> DE</a>
+  					</div>
+				</div>
 	<span class="nav_mobile" onclick="openNav()">&#9776;</span>
 	<nav id="myNav" class="overlay">
 		 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 		<ul class="overlay-content">
-			<li><a href="index.html">Pocetna</a></li>
+			<li><a href="index.html">Početna</a></li>
 			<li><a href="#" class="oznaceno">O nama</a></li>
 			<li><a href="proizvodi.html">Proizvodi</a></li>
 			<li><a href="kontakt.html">Kontakt</a></li>
+			<li>
+				<div class="dropdown_j ukloniti_mobitel">
+	  				<button onclick="myFunction_dropbtn()" class="dropbtn_j"> <i class="fi fi-ba"></i> BA <i class="fa fa-angle-down	
+										dolje_j"></i> </button>
+  					<div id="myDropdown_j" class="dropdown-content_j">
+						    <a href="javascript:void(0)" onclick="change_language_eng()" ><i class="fi fi-gb"></i> EN</a>
+    						<a href="#home" ><i class="fi fi-de"></i> DE</a>
+  					</div>
+				</div>
+			</li>
 		</ul>
 	</nav>
 	</header>
 
 	<main id="main_o_nama">
-		<h1>O nama</h1>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		<div class="naslov_o_nama">
+		<h1> <span class="godina_firma">2018</span><hr class="o_nama_linija"><span class="o_nama_naslov">O NAMA</span><hr class="o_nama_linija"><span class="godina_firma_desno"> 2022</span></h1>
+		</div>
+		
+		<section class="o_idealu">
+			<div class="o_idealu_opis">
+				<h1><span class="oznaceno">IDEAL</span> NAMJEŠTAJ </h1>
+				<p>iDEAL namještaj je firma za prodaju namještaja, osnovana 2018 godine sa sjedištem u Vitezu.
+				   U počecima malo obiteljsko poduzeće, uz naporan rad napreduje i kroz svoj razvoj opredjeljuje se i 
+				   specijalizira prema prodaji kvalitetnog i funkcionalnog namještaja.</p>
+			</div>
+			<img src="img/logo.jpg">
+		</section>
+		<section class="posvecenost">
+			<h2>Naša posvećenost</h2>
+			<p>U našem poslovanju stalan razvoj je neophodan. Upravo zato ne propuštamo niti jednu mogućnost kako za osobni razvoj tako niti za rast i razvoj naše firme. Svoj razvoj osiguravamo prateći svjetske trendove i razvoj tržišta, osluškujući potrebe naših kupaca, i istraživanjem tržišta. Svjetske trendove osim neposredno putem medija pratimo i posredno prisustvujući na najvećim svjetskim sajmovima namještaja. U svom budućem djelovanju ići ćemo u smjeru vizije odnosno u pravcu izvrsnosti u svim područjima. Želimo vrhunsko zadovoljstvo i povjerenje svojih kupaca, ugodno radno okruženje i zadovoljstvo svojih radnika i tržište koje će nam postavljati nove izazove, ali i mogućnosti za napredak.</p>
+		</section>
+
+
+
+
 	</main>
 	<section id="newsletter">
 		<h2>Kontaktirajte nas za mjere i ponudu već danas!</h2>
@@ -78,7 +105,7 @@
 			<ul class="d_mreze">
 				<h2>Pratite nas:</h2>
 				<li><a href="https://www.facebook.com/ideal.bih"><i class="fa fa-facebook-square"></i> Ideal Namještaj</a></li>
-				<li><a href="https://www.instagram.com/ideal.bih"><i class="fa fa-instagram"></i> ideal-bih</a></li>
+				<li><a href="https://www.instagram.com/ideal.bih"><i class="fa fa-instagram"></i> ideal.bih</a></li>
 			</ul>
 			<ul class="r_vrijeme">
 				<h2>Radno vrijeme:</h2>
@@ -87,19 +114,121 @@
 				<li>Nedjelja: neradni dan</li>
 			</ul>
 			<p>BIM Design &copy 2022</p>
-			<div class="footer_pocetna">
+			<div class="footer_pocetna" id="show_footer">
 				<a href="#"><i class="fa fa-long-arrow-up oznaceno"> <span class="ukloniti_mobitel">Pocetak</span></i></a>
 			</div>
 	</footer>
+</div>
 
-	<script>
-function openNav() {
-  document.getElementById("myNav").style.width = "100%";
-}
 
-function closeNav() {
-  document.getElementById("myNav").style.width = "0%";
-}
-</script>
+
+
+
+
+<!--engleski-->
+<div id="eng">
+	
+<header>
+	<a href="#"><img src="img/logo.jpg"></a>
+	<h1><span class = "i">i</span><span class="oznaceno">DEAL</span></h1>
+	<div class="dropdown_j_mob_e dropbtn_j dodati_mobitel jezici">
+	  				<button onclick="myFunction_dropbtn_mobitel_e()" class="dropbtn_j dropbtn_j_mob_e"> <i class="fi fi-gb"></i><i class="fa fa-angle-down	dolje_j"></i> </button>
+  					<div id="myDropdown_j_mob_e" class="dropdown-content_j dropdown-content_j_mob_e">
+						    <a href="javascript:void(0)" onclick="change_language_bos()" ><i class="fi fi-ba"></i> BA</a>
+    						<a href="#home" ><i class="fi fi-de"></i> DE</a>
+  					</div>
+				</div>
+	<span class="nav_mobile" onclick="openNav_eng()">&#9776;</span>
+	<nav id="myNav_eng" class="overlay">
+		 <a href="javascript:void(0)" class="closebtn" onclick="closeNav_eng()">&times;</a>
+		<ul class="overlay-content">
+			<li><a href="index.html">Home</a></li>		
+			<li><a href="#" class="oznaceno">About</a></li>
+			<li><a href="proizvodi.html">Products</a></li>
+			<li><a href="kontakt.html">Contact</a></li>
+			<li>
+				<div class="dropdown_j_e ukloniti_mobitel">
+	  				<button onclick="myFunction_dropbtn_j_e()" class="dropbtn_j_e"> <i class="fi fi-gb"></i> EN <i class="fa fa-angle-down	
+										dolje_j"></i> </button>
+  					<div id="myDropdown_j_e" class="dropdown-content_j_e">
+						    <a href="javascript:void(0)" onclick="change_language_bos()" ><i class="fi fi-ba"></i> BA</a>
+    						<a href="#home" ><i class="fi fi-de"></i> DE</a>
+  					</div>
+				</div>
+			</li>
+				</ul>
+	</nav>
+	</header>
+	<main id="main_o_nama">
+		<div class="naslov_o_nama">
+		<h1> <span class="godina_firma">2018</span><hr class="o_nama_linija"><span class="o_nama_naslov">ABOUT US</span><hr class="o_nama_linija"><span class="godina_firma_desno"> 2022</span></h1>
+		</div>
+		
+		<section class="o_idealu">
+			<div class="o_idealu_opis">
+				<h1><span class="oznaceno">IDEAL</span> FURNITURE </h1>
+				<p>iDEAL furniture is a furniture sales company, founded in 2018 with headquarters in Vitez.
+In the beginning, a small family business, with hard work, is progressing and through its development it is determined and
+specializes in the sale of quality and functional furniture.</p>
+			</div>
+			<img src="img/logo.jpg">
+		</section>
+		<section class="posvecenost">
+			<h2>Our commitment</h2>
+			<p>In our business, constant development is necessary. This is precisely why we do not miss a single opportunity for personal development as well as for the growth and development of our company. We ensure our development by following world trends and market development, listening to the needs of our customers, and conducting market research. We follow world trends not only directly through the media, but also indirectly by attending the world's largest furniture fairs. In our future activities, we will go in the direction of the vision, that is, in the direction of excellence in all areas. We want the highest satisfaction and trust of our customers, a pleasant working environment and the satisfaction of our employees, and a market that will present us with new challenges, but also opportunities for progress.</p>
+		</section>
+
+
+
+
+	</main>
+	<section id="newsletter">
+		<h2>Contact us for measurements and a quote today!</h2>
+		<form>
+			<button onclick="location.href='mailto:idealbih387@gmail.com?subject=Potražnja ponude';">REQUEST A QUOTE</button>
+		</form>
+	</section>
+	<div id="pomoc_on">
+<section id="pomoc">
+			<div class="box">
+			<i class="fa fa-question-circle-o"> Advice and help</i>
+			<p>Do you need advice or help at any time, before, during or after your purchase? You can ask for help by personally coming to the showrooms, by phone or e-mail.</p>
+			</div>
+			<div class="box">
+				<i class="fa fa-truck"> Delivery</i>
+				<p>We deliver all purchased goods with our own transport, free of charge up to a distance of 50 km, and beyond in agreement with the customer.</p>
+			</div>
+			<div class="box">
+				<i class="fa fa-wrench"> Assembly</i>
+				<p>For the assembly of furniture where it is advisable to hire a specialist (such as in the case of bedrooms, kitchens, etc.), we will be happy to help you and offer to have our fitters install the furniture for you at favorable prices</p>
+			</div>
+			<div class="box">
+				<i class="fa fa-heart-o"> Guarantee</i>
+				<p>We offer a warranty on furniture for 12 months, if you follow the instructions given. White goods (BEKO) are guaranteed for 5 years.</p>
+			</div>
+	</section>
+</div>
+
+<footer>
+	<img src="img/logo.jpg">
+			<ul class="d_mreze">
+				<h2>Follow us:</h2>
+				<li><a href="https://www.facebook.com/ideal.bih"><i class="fa fa-facebook-square"></i> Ideal Namještaj</a></li>
+				<li><a href="https://www.instagram.com/ideal.bih"><i class="fa fa-instagram"></i> ideal.bih</a></li>
+			</ul>
+			<ul class="r_vrijeme">
+				<h2>Working hours:</h2>
+				<li>Monday - Friday: 07:00 - 17:00</li>
+				<li>Saturday: 07:00 - 15:00</li>
+				<li>Sunday: non-working day</li>
+			</ul>
+			<p>BIM Design &copy 2022</p>
+			<div class="footer_pocetna" id="show_footer_eng">
+				<a href="#"><i class="fa fa-long-arrow-up oznaceno"> <span class="ukloniti_mobitel">Top</span></i></a>
+			</div>
+	</footer>
+</div>
+
+
 </body>
 </html>

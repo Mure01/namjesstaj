@@ -11,8 +11,8 @@
 	<link rel="stylesheet" type="text/css" href="css/mobile.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>
+
 </head>
 <body>
 	<div id="bos">
@@ -33,10 +33,10 @@
 		<ul class="overlay-content">
 			<li><a href="index.html">Početna</a></li>
 			<li><a href="o_nama.html">O nama</a></li>
-			<li><a href="#" class="oznaceno">Proizvodi</a></li>
+			<li><a href="proizvodi.html" class="oznaceno">Proizvodi</a></li>
 			<li><a href="kontakt.html">Kontakt</a></li>
 			<li>
-				<div class="dropdown_j ukloniti_mobitel">
+				<div class="dropdown_j">
 	  				<button onclick="myFunction_dropbtn()" class="dropbtn_j"> <i class="fi fi-ba"></i> BA <i class="fa fa-angle-down	
 										dolje_j"></i> </button>
   					<div id="myDropdown_j" class="dropdown-content_j">
@@ -45,47 +45,46 @@
   					</div>
 				</div>
 			</li>
+
 		</ul>
 	</nav>
 	</header>
 
-	<main id="svi_proizvodi">
-	<h1><span class="oznaceno"><span class = "i">i</span>DEAL</span>AN NAMJEŠTAJ ZA VAŠ DOM</h1>
-	
-		<div class="zasebni_proizvod">
-			<a href="proizvodi/kuhinje.html"> <img src="img/kuhinje_naslovna.jpg"></a>
-			<a href="proizvodi/kuhinje.html"> <h2 class="naziv_proizvoda">KUHINJE</h2></a>
-		</div>		
-		<div class="zasebni_proizvod">
-			<a href="proizvodi/ormari.html"> <img src="img/ormari_naslovna.jpg"></a>
-			<a href="proizvodi/ormari.html"> <h2 class="naziv_proizvoda">ORMARI</h2> </a>
-		</div>	
-		<div class="zasebni_proizvod">
-			<a href="proizvodi/komode.html"> <img src="img/komode_naslovna.jpg"></a>
-			<a href="proizvodi/komode.html"> <h2 class="naziv_proizvoda">KOMODE</h2></a>
-		</div>	
-		<div class="zasebni_proizvod">
-			<a href="proizvodi/ugaone.html"> <img src="img/ugaone_naslovna.jpg"></a>
-			<a href="proizvodi/ugaone.html"> <h2 class="naziv_proizvoda">UGAONE GARNITURE</h2></a>
-		</div>	
-		<div class="zasebni_proizvod">
-			<a href="proizvodi/kupatilo.html"> <img src="img/kupatilo_naslovna.jpg"></a>
-			<a href="proizvodi/kupatilo.html"> <h2 class="naziv_proizvoda">KUPATILSKI NAMJEŠTAJ</h2></a>
-		</div>	
-		<div class="zasebni_proizvod">
-			<a href="proizvodi/kreveti.html"> <img src="img/kreveti_naslovna.jpg"></a>
-			<a href="proizvodi/kreveti.html"> <h2 class="naziv_proizvoda">KREVETI</h2></a>
-		</div>	
-		<div class="zasebni_proizvod">
-			<a href="proizvodi/plakari.html"> <img src="img/plakari_naslovna.jpg"></a>
-			<a href="proizvodi/plakari.html"> <h2 class="naziv_proizvoda">PREDSOBLJA</h2></a>
-		</div>	
-		<div class="zasebni_proizvod">
-			<a href="proizvodi/stolovi.html"> <img src="img/stol_naslovna.jpg"></a>
-			<a href="proizvodi/stolovi.html"> <h2 class="naziv_proizvoda">STOLOVI</h2></a>
-		</div>	
+	<main id="main_narudzba">
+		<h2><span class="i oznaceno">i</span><span class="oznaceno">DEAL</span> NARUDŽBA</h2>
+
+		<p><strong class="napomena">NAPOMENA: </strong> <br>Prilikom narudžbe u polje "naziv artikla" unosite ID koji se nalazi ispod artikla koji ste odabrali.
+			<br>U polje "sirina" unosite širinu koju imate dostupnu za proizvod, ukoliko se radi o kuhinji, ormaru ili proizvodu koji može biti ograničen dimenzijama, u suprotnom u polje unesite 1.
+			<br>U polje "zahtjevi.." unosite podatke koje biste eventualno promjenuli, npr boju namještaja, izbacili neke elementa, a ubacili druge itd.<br>
+			Vaši podaci ostaju sigurni i neće biti zloupotrebljeni.
+		</p>
+
+		<h3 class="h3_podaci">Vaši podaci</h3>
+		<h3 class="h3_proizvod ukloniti_mobitel">Podaci o proizvodu</h3>
+		<form method="post" netlify id="forma_podaci">
+					<input type="text" name="ime_prezime" placeholder="Vaše ime i prezime..." required>
+					<input type="text" name="id_artikla" placeholder="Naziv artikla..." required class="ukloniti_mobitel"> 
+					<br>
+					<input type="text" name="adresa" placeholder="Vaša adresa..." required>
+					<input type="number" name="širina" placeholder="Dostupna širina..." required class="ukloniti_mobitel">
+					<textarea placeholder="Unesite vaše zahtjeve..." class="ukloniti_mobitel"></textarea>
+					<br>
+					<input type="tel" name="broj_telefona" placeholder="Vaš broj telefona..." required><br>
+		<h3 class="h3_proizvod dodati_mobitel">Podaci o proizvodu</h3>
+
+					<input type="text" name="id_artikla" placeholder="Naziv artikla..." required class="dodati_mobitel"> 
+					<input type="number" name="širina" placeholder="Dostupna širina..." required class="dodati_mobitel">
+					<textarea placeholder="Unesite vaše zahtjeve..." class="dodati_mobitel"></textarea>
+					<input type="submit" value="Naručite">
+				</form>
+				<p>
+					<strong class="napomena">NAPOMENA:</strong> <br>
+					Nakon Vaše narudžbe kontaktirati ćemo vas u najkraćem roku kako bi potvrdili vašu narudžbu i saslušali još jednom Vaše
+					zahtjeve ukoliko ih ima. <br>
+					Očekujemo divnu saradnju sa Vama, Vaš iDEAL.
+					</p>
 	</main>
-	
+
 
 <footer>
 	<img src="img/logo.jpg">
@@ -105,16 +104,16 @@
 				<a href="#"><i class="fa fa-long-arrow-up oznaceno"> <span class="ukloniti_mobitel">Pocetak</span></i></a>
 			</div>
 	</footer>
-
 </div>
 
 
 
 
-<!--engleski-->
 
-	<div id="eng">
-<header>
+<!--engleskii-->
+
+<div id="eng">
+		<header>
 	<a href="#"><img src="img/logo.jpg"></a>
 	<h1><span class = "i">i</span><span class="oznaceno">DEAL</span></h1>
 	<div class="dropdown_j_mob_e dropbtn_j dodati_mobitel jezici">
@@ -128,12 +127,12 @@
 	<nav id="myNav_eng" class="overlay">
 		 <a href="javascript:void(0)" class="closebtn" onclick="closeNav_eng()">&times;</a>
 		<ul class="overlay-content">
-			<li><a href="index.html">Home</a></li>		
-			<li><a href="o_nama.html">About</a></li>
-			<li><a href="#" class="oznaceno">Products</a></li>
-			<li><a href="kontakt.html">Contact</a></li>
+			<li><a href="#" class="oznaceno">Home</a></li>		
+			<li><a href="o_nama.html#eng">About</a></li>
+			<li><a href="proizvodi.html#eng">Products</a></li>
+			<li><a href="kontakt.html#eng">Contact</a></li>
 			<li>
-				<div class="dropdown_j_e ukloniti_mobitel">
+				<div class="dropdown_j_e">
 	  				<button onclick="myFunction_dropbtn_j_e()" class="dropbtn_j_e"> <i class="fi fi-gb"></i> EN <i class="fa fa-angle-down	
 										dolje_j"></i> </button>
   					<div id="myDropdown_j_e" class="dropdown-content_j_e">
@@ -146,43 +145,42 @@
 	</nav>
 	</header>
 
-	<main id="svi_proizvodi">
-	<h1><span class="oznaceno"><span class = "i">i</span>DEAL</span> FURNITURE FOR YOUR HOME</h1>
+	<main id="main_narudzba">
+		<h2><span class="i oznaceno">i</span><span class="oznaceno">DEAL</span> ORDER</h2>
 
-			<div class="zasebni_proizvod">
-			<a href="proizvodi/kuhinje.html"> <img src="img/kuhinje_naslovna.jpg"></a>
-			<a href="proizvodi/kuhinje.html"> <h2 class="naziv_proizvoda">KITCHEN</h2></a>
-		</div>		
-		<div class="zasebni_proizvod">
-			<a href="proizvodi/ormari.html"> <img src="img/ormari_naslovna.jpg"></a>
-			<a href="proizvodi/ormari.html"> <h2 class="naziv_proizvoda">WARDROBES</h2> </a>
-		</div>	
-		<div class="zasebni_proizvod">
-			<a href="proizvodi/komode.html"> <img src="img/komode_naslovna.jpg"></a>
-			<a href="proizvodi/komode.html"> <h2 class="naziv_proizvoda">DRESSER</h2></a>
-		</div>	
-		<div class="zasebni_proizvod">
-			<a href="proizvodi/ugaone.html"> <img src="img/ugaone_naslovna.jpg"></a>
-			<a href="proizvodi/ugaone.html"> <h2 class="naziv_proizvoda">CORNER SOFA</h2></a>
-		</div>	
-		<div class="zasebni_proizvod">
-			<a href="proizvodi/kupatilo.html"> <img src="img/kupatilo_naslovna.jpg"></a>
-			<a href="proizvodi/kupatilo.html"> <h2 class="naziv_proizvoda">BATHROOM FURNITURE</h2></a>
-		</div>	
-		<div class="zasebni_proizvod">
-			<a href="proizvodi/kreveti.html"> <img src="img/kreveti_naslovna.jpg"></a>
-			<a href="proizvodi/kreveti.html"> <h2 class="naziv_proizvoda">BEDS</h2></a>
-		</div>	
-		<div class="zasebni_proizvod">
-			<a href="proizvodi/plakari.html"> <img src="img/plakari_naslovna.jpg"></a>
-			<a href="proizvodi/plakari.html"> <h2 class="naziv_proizvoda">ANTEROOM</h2></a>
-		</div>	
-		<div class="zasebni_proizvod">
-			<a href="proizvodi/stolovi.html"> <img src="img/stol_naslovna.jpg"></a>
-			<a href="proizvodi/stolovi.html"> <h2 class="naziv_proizvoda">TABLES</h2></a>
-		</div>	
+		<p><strong class="napomena">NOTE: </strong> <br>When ordering, in the "item name" field, enter the ID found under the item you selected.
+<br>In the "width" field, enter the width you have available for the product, if it is a kitchen, wardrobe or product that can be limited in dimensions, otherwise enter 1 in the field.
+<br>In the "requirements.." field, enter data that you would eventually change, for example the color of the furniture, remove some elements and insert others, etc.<br>
+Your data remains safe and will not be misused.
+		</p>
+
+		<h3 class="h3_podaci">Your data</h3>
+		<h3 class="h3_proizvod ukloniti_mobitel">Product information</h3>
+		<form method="post" netlify id="forma_podaci">
+					<input type="text" name="ime_prezime" placeholder="Your name and last name..." required>
+					<input type="text" name="id_artikla" placeholder="Product name..." required class="ukloniti_mobitel"> 
+					<br>
+					<input type="text" name="adresa" placeholder="Your adress..." required>
+					<input type="number" name="širina" placeholder="Available width..." required class="ukloniti_mobitel">
+					<textarea placeholder="Enter your requirements..." class="ukloniti_mobitel"></textarea>
+					<br>
+					<input type="tel" name="broj_telefona" placeholder="Your phone number..." required><br>
+		<h3 class="h3_proizvod dodati_mobitel">Product information</h3>
+
+					<input type="text" name="id_artikla" placeholder="Product name..." required class="dodati_mobitel"> 
+					<input type="number" name="širina" placeholder="Available width..." required class="dodati_mobitel">
+					<textarea placeholder="Enter your requirements..." class="dodati_mobitel"></textarea>
+					<input type="submit" value="ORDER">
+				</form>
+				<p>
+					<strong class="napomena">NOTE:</strong> <br>
+After your order, we will contact you as soon as possible to confirm your order and listen to your requests once again
+requirements if any. <br>
+We expect wonderful cooperation with you, Your iDEAL.
+					</p>
 	</main>
-	
+
+
 <footer>
 	<img src="img/logo.jpg">
 			<ul class="d_mreze">

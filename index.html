@@ -1,68 +1,118 @@
+
 <!DOCTYPE html>
 <html>
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="keywords" content="namještaj, kuhinje, ormari, namjestaj po mjeri, ideal namjestaj,
+	namjestaj vitez, komode, plakari, kreveti, stolovi, secije">
+	<meta name="author" content="Belmin Muratovic">
 	<title>Ideal namještaj</title>
 	<link rel="icon" type="image/x-icon" href="img/logo.jpg">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/6.6.6/css/flag-icons.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/mobile.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style768-1024.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script defer src="js/hiden.js"></script>
+	<script defer src="js/main.js"></script>
 </head>
 <body>
+	<div id="bos">
 	<header>
 	<a href="#"><img src="img/logo.jpg"></a>
-	<h1>I<span class="oznaceno">DEAL</span></h1>
+	<h1><span class = "i">i</span><span class="oznaceno">DEAL</span></h1>
+	<div class="dropdown_j_mob dropbtn_j dodati_mobitel jezici">
+	  				<button onclick="myFunction_dropbtn_mobitel()" class="dropbtn_j dropbtn_j_mob"> <i class="fi fi-ba"></i><i class="fa fa-angle-down	
+										dolje_j"></i> </button>
+  					<div id="myDropdown_j_mob" class="dropdown-content_j dropdown-content_j_mob">
+						    <a href="javascript:void(0)" onclick="change_language_eng()" ><i class="fi fi-gb"></i> EN</a>
+    						<a href="#home" ><i class="fi fi-de"></i> DE</a>
+  					</div>
+				</div>
 	<span class="nav_mobile" onclick="openNav()">&#9776;</span>
 	<nav id="myNav" class="overlay">
 		 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 		<ul class="overlay-content">
-			<li><a href="#" class="oznaceno">Pocetna</a></li>	
+			<li><a href="#" class="oznaceno">Početna</a></li>
 			<li><a href="o_nama.html">O nama</a></li>
 			<li><a href="proizvodi.html">Proizvodi</a></li>
 			<li><a href="kontakt.html">Kontakt</a></li>
-		</ul>
+			<li>
+				<div class="dropdown_j ukloniti_mobitel">
+	  				<button onclick="myFunction_dropbtn()" class="dropbtn_j"> <i class="fi fi-ba"></i> BA <i class="fa fa-angle-down	
+										dolje_j"></i> </button>
+  					<div id="myDropdown_j" class="dropdown-content_j">
+						    <a href="javascript:void(0)" onclick="change_language_eng()" ><i class="fi fi-gb"></i> EN</a>
+    						<a href="#home" ><i class="fi fi-de"></i> DE</a>
+  					</div>
+				</div>
+			</li>
+				</ul>
 	</nav>
 	</header>
 
 	<section id="pocetna">
 	</section>
 	<section id="newsletter">
-		<h2>Kontaktirajte nas za mjere i ponudu već danas!</h2>
+		<h2 class="hidden">Kontaktirajte nas za mjere i ponudu već danas!</h2>
 		<form>
-			<button onclick="location.href='mailto:idealbih387@gmail.com?subject=Potražnja ponude';">ZATRAŽITE PONUDU</button>
+			<button onclick="location.href='mailto:idealbih387@gmail.com?subject=Potražnja ponude';" class="hidden">ZATRAŽITE PONUDU</button>
 		</form>
 	</section>
 
 
-	<section id="boxes">
-	<h2><span class="oznaceno">IDEAL</span>AN NAMJEŠTAJ ZA VAŠ DOM</h2>
+	<section id="kratki_opis">
+		<div class="naslov_opisa hidden">
+	<h2><span class = "i oznaceno">i</span><span class="oznaceno">DEAL</span>AN NAMJEŠTAJ <br> ZA VAŠ DOM</h2>
+	</div>
+	<div class="opis_opis hidden">
+	<p>
+		Uz kuhinje modernog dizajna i visoke kvalitete, opremamo apartmane i montiramo namještaj za poslovne prostore, dječje i spavaće sobe. 
+		<br><br>		
+		Također možemo Vam ponuditi ugradnju ugradbenih ormara, kliznih vrata i kliznih stijena, te montaže iskoristivih podnih konstrukcija koje su idealna rješenja za visoke i vrlo visoke stanove, prema rješenjima vašeg ili našeg dizajnera.
+	</p>
+</div>
 
-		<div class="box">
-			<img src="img/kuhinja12.png">
-			<div class="desc">
-				<h2>Kuhinje</h2>
-				<p>Kuhinja predstavlja središnji prostor doma.To je mjesto na kom se sjedinjuju različiti ukusi i mirisi sa ljubavlju koja dijeli jedna porodica. Zbog toga je potrebno da ona bude uređena tako da Vam omogući da se ovaj spoj događa svaki dan. Imajući na umu da zajednički obrok zbližava članove porodice, za Vas smo pripremili komade različitih dimenzija, boja i stilova koji će osigurati da pripremanje svakog jela bude uživanje.</p>
-				<a href="proizvodi.html#kuhinje"><button>KUHINJE</button></a>
-			</div>
-		</div>
-		<div class="box">
-			<img src="img/ormar14.png">
-			<div class="desc">
-				<h2>Ormari</h2>
-				<p>Ormari ti pomažu s organizacijom odjeće, cipela i bilo čega drugog što želiš pospremiti na praktičan i elegantan način. Brojni naši ormari uključuju i unutarnje organizatore, poput šipki za odjeću i polica koje će ti pomoći organizirati stvari.</p>
-				<a href="proizvodi.html#ormari"><button>ORMARI</button></a>
-			</div>
-		</div>
-		<div class="box">
-			<img src="img/komoda13.png">
-			<div class="desc">
-				<h2>Komode</h2>
-				<p>Odabirom elegantne i funkcionalne komode koja upotpunjuje Vašu prostoriju osigurajte sebi uvijek koristan dodatni prostor za pohranu stvari. Nakon ulaska u stan ili kuću obično prvo vidimo ormare, komode i ladičare. Oni predstavljaju mjesto gdje spremamo svoje cipele i odjeću, ali i mjesto gdje možeš pronaći razne papuče za goste. Komode se već neko vrijeme smatraju neophodnim elementima modernog namještaja i pokućstva.</p>
-				<a href="proizvodi.html#komode"><button>KOMODE</button></a>
-			</div>
-		</div>
 	</section>
+
+	<section id="komplet_opremanje">
+		<h2 class="hidden">KOMPLETNO OPREMANJE</h2>
+		<p class="hidden">Opremanje enterijera zahtjeva stručnost, inspiraciju i slobodu kreativnosti. Trendovi budućnosti diktiraju spoj struke i individualno-kreativnih ideja.
+			<br><br>
+		Nesumnjivo prateći savremene trendove iDEAL nudi platformu zajedničke kreativnosti i stvaranja u vašem domu. Spojem dizajnerske stručnosti i vaših ličnih kreacija nastaju umjetnička djela u obliku modernog namještaja za vaš dom.</p>
+		<h3 class="hidden">Pogodnosti kompletnog opremanja: </h3>
+
+		<ul class="hidden">
+			<li>Svi modeli namještaja su po mjeri</li>
+			<li>Sručno savjetovanje o opremanju</li>
+			<li>3D idejna rješenja svih vaših želja</li>
+			<li>Najkvalitetniji materijali za izradu namještaja</li>
+			<li>Autentičan dizajn i stil</li>
+			<li>Bogat izbor dekora</li>
+			<li>Izbor materijala za izradu pločastog namještaja (iveral, lakirani medijapan)</li>
+			<li>Brza isporuka</li>
+		</ul>
+
+	</section>
+
+	<section id="ideal_kupovina">
+		<img src="img/kuhinje_naslovna.jpg" class="dodati_mobitel">
+	<div class="kupovina">
+		<h2 class="hidden"><span class="i oznaceno">i</span><span class="oznaceno">DEAL</span>NA KUPOVINA </h2>
+		<p class="hidden">U službi povjerenja naših vjernih kupaca, koje nas čini jednim od lidera u proizvodnji i prodaji namještaja po mjeri, od sada potpuno nova iDEAL-na usluga online kupovine iz udobnosti vašeg doma.
+			<br><br>
+		Na našoj web stranici kupci imaju mogućnost kupovine i konfiguracije namještaja po želji iz iDEAL izuzetno bogate ponude.
+		<a href="proizvodi.html"><button>POGLEDAJTE PONUDU</button></a>
+		 </p>
+
+</div>
+		<img src="img/kuhinje_naslovna.jpg" class="ukloniti_mobitel hidden">
+
+	</section>
+
+	
 	<section id="pomoc">
 			<div class="box">
 			<i class="fa fa-question-circle-o"> Savjeti i pomoć</i>
@@ -87,7 +137,7 @@
 			<ul class="d_mreze">
 				<h2>Pratite nas:</h2>
 				<li><a href="https://www.facebook.com/ideal.bih"><i class="fa fa-facebook-square"></i> Ideal Namještaj</a></li>
-				<li><a href="https://www.instagram.com/ideal.bih"><i class="fa fa-instagram"></i> ideal-bih</a></li>
+				<li><a href="https://www.instagram.com/ideal.bih"><i class="fa fa-instagram"></i> ideal.bih</a></li>
 			</ul>
 			<ul class="r_vrijeme">
 				<h2>Radno vrijeme:</h2>
@@ -96,19 +146,153 @@
 				<li>Nedjelja: neradni dan</li>
 			</ul>
 			<p>BIM Design &copy 2022</p>
-			<div class="footer_pocetna">
+			<div class="footer_pocetna" id="show_footer">
 				<a href="#"><i class="fa fa-long-arrow-up oznaceno"> <span class="ukloniti_mobitel">Pocetak</span></i></a>
 			</div>
 	</footer>
 
-	<script>
-function openNav() {
-  document.getElementById("myNav").style.width = "100%";
-}
+</div>
 
-function closeNav() {
-  document.getElementById("myNav").style.width = "0%";
-}
-</script>
+
+
+
+
+
+<!--engleski-->
+<div id="eng">
+	<header>
+	<a href="#"><img src="img/logo.jpg"></a>
+	<h1><span class = "i">i</span><span class="oznaceno">DEAL</span></h1>
+	<div class="dropdown_j_mob_e dropbtn_j dodati_mobitel jezici">
+	  				<button onclick="myFunction_dropbtn_mobitel_e()" class="dropbtn_j dropbtn_j_mob_e"> <i class="fi fi-gb"></i><i class="fa fa-angle-down	dolje_j"></i> </button>
+  					<div id="myDropdown_j_mob_e" class="dropdown-content_j dropdown-content_j_mob_e">
+						    <a href="javascript:void(0)" onclick="change_language_bos()" ><i class="fi fi-ba"></i> BA</a>
+    						<a href="#home" ><i class="fi fi-de"></i> DE</a>
+  					</div>
+				</div>
+	<span class="nav_mobile" onclick="openNav_eng()">&#9776;</span>
+	<nav id="myNav_eng" class="overlay">
+		 <a href="javascript:void(0)" class="closebtn" onclick="closeNav_eng()">&times;</a>
+		<ul class="overlay-content">
+			<li><a href="#" class="oznaceno">Home</a></li>		
+			<li><a href="o_nama.html#eng">About</a></li>
+			<li><a href="proizvodi.html#eng">Products</a></li>
+			<li><a href="kontakt.html#eng">Contact</a></li>
+			<li>
+				<div class="dropdown_j_e">
+	  				<button onclick="myFunction_dropbtn_j_e()" class="dropbtn_j_e ukloniti_mobitel"> <i class="fi fi-gb"></i> EN <i class="fa fa-angle-down	
+										dolje_j"></i> </button>
+  					<div id="myDropdown_j_e" class="dropdown-content_j_e">
+						    <a href="javascript:void(0)" onclick="change_language_bos()" ><i class="fi fi-ba"></i> BA</a>
+    						<a href="#home" ><i class="fi fi-de"></i> DE</a>
+  					</div>
+				</div>
+			</li>
+				</ul>
+	</nav>
+	</header>
+
+	<section id="pocetna">
+	</section>
+	<section id="newsletter">
+		<h2 class="hidden">Contact us for measurements and a quote today!</h2>
+		<form>
+			<button onclick="location.href='mailto:idealbih387@gmail.com?subject=Potražnja ponude';" class="hidden">REQUEST A QUOTE</button>
+		</form>
+	</section>
+
+
+	<section id="kratki_opis">
+		<div class="naslov_opisa hidden">
+	<h2><span class = "i oznaceno">i</span><span class="oznaceno">DEAL</span> FURNITURE <br> FOR YOUR HOME</h2>
+	</div>
+	<div class="opis_opis hidden">
+	<p>
+		In addition to kitchens of modern design and high quality, we equip apartments and assemble furniture for business premises, children's and bedrooms. 
+		<br><br>		
+		We can also offer you the installation of built-in wardrobes, sliding doors and sliding walls, as well as the installation of usable floor structures that are ideal solutions for tall and very tall apartments, according to your or our designer's solutions.
+	</p>
+</div>
+
+	</section>
+
+	<section id="komplet_opremanje">
+		<h2 class="hidden">COMPLETE EQUIPMENT</h2>
+		<p class="hidden">Furnishing the interior requires expertise, inspiration and freedom of creativity. Future trends dictate the combination of expertise and individual creative ideas.
+			<br><br>
+		Undoubtedly following modern trends, iDEAL offers a platform of joint creativity and creation in your home. The combination of design expertise and your personal creations creates works of art in the form of modern furniture for your home.</p>
+		<h3 class="hidden">Advantages of complete equipment: </h3>
+
+		<ul class="hidden">
+			<li>All furniture models are custom-made</li>
+			<li>Professional advice on furnishing</li>
+			<li>3D conceptual solutions of all your wishes</li>
+			<li>The highest quality materials for making furniture</li>
+			<li>Authentic design and style</li>
+			<li>A rich selection of decor</li>
+			<li>Selection of materials for the production of panel furniture (chipboard, lacquered MDF)</li>
+			<li>Fast delivery</li>
+		</ul>
+
+	</section>
+
+	<section id="ideal_kupovina">
+		<img src="img/kuhinje_naslovna.jpg" class="dodati_mobitel">
+	<div class="kupovina">
+		<h2 class="hidden"><span class="i oznaceno">i</span><span class="oznaceno">DEAL</span> BUY </h2>
+		<p class="hidden">In the service of the trust of our loyal customers, which makes us one of the leaders in the production and sale of custom-made furniture, from now on the brand new iDEAL online shopping service from the comfort of your home.
+			<br><br>
+		On our website, customers have the option of purchasing and configuring furniture as desired from iDEAL's extremely rich offer.
+		<a href="proizvodi.html"><button>SEE THE OFFER</button></a>
+		 </p>
+
+</div>
+		<img src="img/kuhinje_naslovna.jpg" class="ukloniti_mobitel hidden">
+
+	</section>
+
+	
+	<section id="pomoc">
+			<div class="box">
+			<i class="fa fa-question-circle-o"> Advice and help</i>
+			<p>Do you need advice or help at any time, before, during or after your purchase? You can ask for help by personally coming to the showrooms, by phone or e-mail.</p>
+			</div>
+			<div class="box">
+				<i class="fa fa-truck"> Delivery</i>
+				<p>We deliver all purchased goods with our own transport, free of charge up to a distance of 50 km, and beyond in agreement with the customer.</p>
+			</div>
+			<div class="box">
+				<i class="fa fa-wrench"> Assembly</i>
+				<p>For the assembly of furniture where it is advisable to hire a specialist (such as in the case of bedrooms, kitchens, etc.), we will be happy to help you and offer to have our fitters install the furniture for you at favorable prices</p>
+			</div>
+			<div class="box">
+				<i class="fa fa-heart-o"> Guarantee</i>
+				<p>We offer a warranty on furniture for 12 months, if you follow the instructions given. White goods (BEKO) are guaranteed for 5 years.</p>
+			</div>
+	</section>
+
+<footer>
+	<img src="img/logo.jpg">
+			<ul class="d_mreze">
+				<h2>Follow us:</h2>
+				<li><a href="https://www.facebook.com/ideal.bih"><i class="fa fa-facebook-square"></i> Ideal Namještaj</a></li>
+				<li><a href="https://www.instagram.com/ideal.bih"><i class="fa fa-instagram"></i> ideal.bih</a></li>
+			</ul>
+			<ul class="r_vrijeme">
+				<h2>Working hours:</h2>
+				<li>Monday - Friday: 07:00 - 17:00</li>
+				<li>Saturday: 07:00 - 15:00</li>
+				<li>Sunday: non-working day</li>
+			</ul>
+			<p>BIM Design &copy 2022</p>
+			<div class="footer_pocetna" id="show_footer_eng">
+				<a href="#"><i class="fa fa-long-arrow-up oznaceno"> <span class="ukloniti_mobitel">Top</span></i></a>
+			</div>
+	</footer>
+
+</div>
+
+
+
 </body>
 </html>
