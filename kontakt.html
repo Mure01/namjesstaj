@@ -5,22 +5,47 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>O nama - Ideal</title>
 	<link rel="icon" type="image/x-icon" href="img/logo.jpg">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/6.6.6/css/flag-icons.min.css" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/style768-1024.css">
 	<link rel="stylesheet" type="text/css" href="css/mobile.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+	
 </head>
 <body>
+	<div id="bos">
 <header>
 	<a href="index.html"><img src="img/logo.jpg"></a>
-	<h1>I<span class="oznaceno">DEAL</span></h1>
+	<h1><span class = "i">i</span><span class="oznaceno">DEAL</span></h1>
+		<div class="dropdown_j_mob dropbtn_j dodati_mobitel jezici">
+	  				<button onclick="myFunction_dropbtn_mobitel()" class="dropbtn_j dropbtn_j_mob"> <i class="fi fi-ba"></i><i class="fa fa-angle-down	
+										dolje_j"></i> </button>
+  					<div id="myDropdown_j_mob" class="dropdown-content_j dropdown-content_j_mob">
+						    <a href="javascript:void(0)" onclick="change_language_eng()" ><i class="fi fi-gb"></i> EN</a>
+    						<a href="#home" ><i class="fi fi-de"></i> DE</a>
+  					</div>
+				</div>
 	<span class="nav_mobile" onclick="openNav()">&#9776;</span>
 	<nav id="myNav" class="overlay">
 		 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 		<ul class="overlay-content">
-			<li><a href="index.html">Pocetna</a></li>
+			<li><a href="index.html">Početna</a></li>
 			<li><a href="o_nama.html">O nama</a></li>
 			<li><a href="proizvodi.html">Proizvodi</a></li>
 			<li><a href="#" class="oznaceno">Kontakt</a></li>
+			<li>
+				<div class="dropdown_j ukloniti_mobitel">
+	  				<button onclick="myFunction_dropbtn()" class="dropbtn_j"> <i class="fi fi-ba"></i> BA <i class="fa fa-angle-down	
+										dolje_j"></i> </button>
+  					<div id="myDropdown_j" class="dropdown-content_j">
+						    <a href="javascript:void(0)" onclick="change_language_eng()" ><i class="fi fi-gb"></i> EN</a>
+    						<a href="#home" ><i class="fi fi-de"></i> DE</a>
+  					</div>
+				</div>
+			</li>
+
 		</ul>
 	</nav>
 	</header>
@@ -38,7 +63,7 @@
 			<li><a href="tel:062839710"><i class="fa fa-phone"></i> 062-839-710</a></li>
 		</ul>
 		<form>
-				<form method="post" netlify>
+				<form action="https://formsubmit.co/belci911mu@gmail.com" method="POST">
 					<legend>Zatražite ponudu odmah!</legend>
 					<input type="text" name="ime" placeholder="Vaše ime..." required>
 					<input type="text" name="prezime" placeholder="Vaše prezime..." required><br>
@@ -75,7 +100,7 @@
 			<ul class="d_mreze">
 				<h2>Pratite nas:</h2>
 				<li><a href="https://www.facebook.com/ideal.bih"><i class="fa fa-facebook-square"></i> Ideal Namještaj</a></li>
-				<li><a href="https://www.instagram.com/ideal.bih"><i class="fa fa-instagram"></i> ideal-bih</a></li>
+				<li><a href="https://www.instagram.com/ideal.bih"><i class="fa fa-instagram"></i> ideal.bih</a></li>
 			</ul>
 			<ul class="r_vrijeme">
 				<h2>Radno vrijeme:</h2>
@@ -84,20 +109,117 @@
 				<li>Nedjelja: neradni dan</li>
 			</ul>
 			<p>BIM Design &copy 2022</p>
-			<div class="footer_pocetna">
+			<div class="footer_pocetna" id="show_footer">
 				<a href="#"><i class="fa fa-long-arrow-up oznaceno"> <span class="ukloniti_mobitel">Pocetak</span></i></a>
 			</div>
 	</footer>
 
+</div>
 
-	<script>
-function openNav() {
-  document.getElementById("myNav").style.width = "100%";
-}
 
-function closeNav() {
-  document.getElementById("myNav").style.width = "0%";
-}
-</script>
+
+
+<!--engleskii-->
+
+<div id="eng">
+	<header>
+	<a href="#"><img src="img/logo.jpg"></a>
+	<h1><span class = "i">i</span><span class="oznaceno">DEAL</span></h1>
+	<div class="dropdown_j_mob_e dropbtn_j dodati_mobitel jezici">
+	  				<button onclick="myFunction_dropbtn_mobitel_e()" class="dropbtn_j dropbtn_j_mob_e"> <i class="fi fi-gb"></i><i class="fa fa-angle-down	dolje_j"></i> </button>
+  					<div id="myDropdown_j_mob_e" class="dropdown-content_j dropdown-content_j_mob_e">
+						    <a href="javascript:void(0)" onclick="change_language_bos()" ><i class="fi fi-ba"></i> BA</a>
+    						<a href="#home" ><i class="fi fi-de"></i> DE</a>
+  					</div>
+				</div>
+	<span class="nav_mobile" onclick="openNav_eng()">&#9776;</span>
+	<nav id="myNav_eng" class="overlay">
+		 <a href="javascript:void(0)" class="closebtn" onclick="closeNav_eng()">&times;</a>
+		<ul class="overlay-content">
+			<li><a href="index.html">Home</a></li>		
+			<li><a href="#">About</a></li>
+			<li><a href="proizvodi.html">Products</a></li>
+			<li><a href="kontakt.html"  class="oznaceno">Contact</a></li>
+			<li>
+				<div class="dropdown_j_e ukloniti_mobitel">
+	  				<button onclick="myFunction_dropbtn_j_e()" class="dropbtn_j_e"> <i class="fi fi-gb"></i> EN <i class="fa fa-angle-down	
+										dolje_j"></i> </button>
+  					<div id="myDropdown_j_e" class="dropdown-content_j_e">
+						    <a href="javascript:void(0)" onclick="change_language_bos()" ><i class="fi fi-ba"></i> BA</a>
+    						<a href="#home" ><i class="fi fi-de"></i> DE</a>
+  					</div>
+				</div>
+			</li>
+				</ul>
+	</nav>
+	</header>
+	<main id="main_kontakt">
+	<section id="kontakt">
+		<ul>
+			<h2>Look for us!</h2>
+			<li><i class="fa fa-map-marker"></i> Počulica b.b Vitez<br> <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2861.678459526523!2d17.837298515426!3d44.172486426714016!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475f1d9ced2ca505%3A0x8d5af97938c3661e!2sNamje%C5%A1taj%20IDEAL!5e0!3m2!1sbs!2sba!4v1668529019776!5m2!1sbs!2sba" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></li>
+		</ul>
+	</section>
+	<section id="forma">
+		<ul>
+			<h2>Contact us!</h2>
+			<li><a href="mailto:idealbih387@gmail.com"><i class="fa fa-envelope-open"></i> idealbih387@gmail.com</a></li>
+			<li><a href="tel:062839710"><i class="fa fa-phone"></i> 062-839-710</a></li>
+		</ul>
+		<form>
+				<form method="post" netlify>
+					<legend>Request a quote now!</legend>
+					<input type="text" name="ime" placeholder="Your name..." required>
+					<input type="text" name="prezime" placeholder="Your last name..." required><br>
+					<input type="email" name="mail" placeholder="Your email..." required><br>
+					<input type="text" name="naslov" placeholder="Topic..." required><br>
+					<textarea name="poruka" placeholder="Your message..." required></textarea>
+					<input type="submit" value="Submit">
+				</form>
+		</form>
+	</section>
+</main>
+<div id="pomoc_k">
+<section id="pomoc">
+			<div class="box">
+			<i class="fa fa-question-circle-o"> Advice and help</i>
+			<p>Do you need advice or help at any time, before, during or after your purchase? You can ask for help by personally coming to the showrooms, by phone or e-mail.</p>
+			</div>
+			<div class="box">
+				<i class="fa fa-truck"> Delivery</i>
+				<p>We deliver all purchased goods with our own transport, free of charge up to a distance of 50 km, and beyond in agreement with the customer.</p>
+			</div>
+			<div class="box">
+				<i class="fa fa-wrench"> Assembly</i>
+				<p>For the assembly of furniture where it is advisable to hire a specialist (such as in the case of bedrooms, kitchens, etc.), we will be happy to help you and offer to have our fitters install the furniture for you at favorable prices</p>
+			</div>
+			<div class="box">
+				<i class="fa fa-heart-o"> Guarantee</i>
+				<p>We offer a warranty on furniture for 12 months, if you follow the instructions given. White goods (BEKO) are guaranteed for 5 years.</p>
+			</div>
+	</section>
+</div>
+<footer>
+	<img src="img/logo.jpg">
+			<ul class="d_mreze">
+				<h2>Follow us:</h2>
+				<li><a href="https://www.facebook.com/ideal.bih"><i class="fa fa-facebook-square"></i> Ideal Namještaj</a></li>
+				<li><a href="https://www.instagram.com/ideal.bih"><i class="fa fa-instagram"></i> ideal.bih</a></li>
+			</ul>
+			<ul class="r_vrijeme">
+				<h2>Working hours:</h2>
+				<li>Monday - Friday: 07:00 - 17:00</li>
+				<li>Saturday: 07:00 - 15:00</li>
+				<li>Sunday: non-working day</li>
+			</ul>
+			<p>BIM Design &copy 2022</p>
+			<div class="footer_pocetna" id="show_footer_eng">
+				<a href="#"><i class="fa fa-long-arrow-up oznaceno"> <span class="ukloniti_mobitel">Top</span></i></a>
+			</div>
+	</footer>
+
+
+</div>
+
 </body>
 </html>
