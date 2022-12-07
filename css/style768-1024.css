@@ -1,0 +1,77 @@
+@media only screen and (min-width: 701px) and (max-width: 1023px){
+
+	header img {
+		margin-left: 15px;
+	}
+	header h1 {
+		margin-left: 120px;
+	}
+	header nav ul {
+		margin-right: 0	;
+	}
+
+	 #newsletter h2 {
+	 	width: 100%;
+	 	text-align: center;
+	 	padding-left: 0;
+	 }
+	 #newsletter form {
+	 	float: none;
+	 	padding-bottom: 20px;
+	 }
+	 #newsletter form button{
+	 	margin-left: 50%;
+	 	transform: translateX(-50%);
+	 }
+	 .opis_opis p {
+	 	margin-top: 10px;
+	 }
+	 #komplet_opremanje {
+	 	min-height: 60vh;
+	 }
+	 #ideal_kupovina {
+	 	min-height: 60vh;
+	 }
+	 #pomoc .box {
+	 	min-height: 350px;
+	 }
+	 footer img {
+	 	left: 3%	;
+	 }
+	 footer .d_mreze {
+	 	margin-left: 20%;
+	 }
+	 footer .r_vrijeme {
+	 	left: 60%;
+	 }
+	 footer p {
+	 	width: 100%;
+	 	left: 3%;
+	 	text-align: left;
+	 	bottom: -20px;
+	 }
+	 footer .footer_pocetna {
+	 	top: 10px;
+	 }
+	 .naslov_o_nama h1{
+	 	width: 100%;
+	 }
+	 .zasebni_proizvod {
+	 	width: 45%;
+	 	margin-left: 5%;
+	 }
+
+	 .proizvodi_naslov{
+	 	width: 70%;
+	 	margin-left: 20%;
+	 }
+
+	 .dropbtn {
+	 	width: 200px;
+	 }
+
+	 .card{
+	 	max-width: 45%;
+	 	margin-left: 5%;
+	 }
+}

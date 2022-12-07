@@ -1,4 +1,4 @@
-@media only screen and (max-width:480px){
+@media only screen and (max-width:700px){
 	header img {
 		margin-left: 10px;
 		border-radius: 50%;
@@ -8,10 +8,22 @@
 	header h1 {
 		margin-left: 80px;
 		margin-top: 10px;
+		letter-spacing:5px;
 	}
+	header nav ul {
+		margin-right: 0;
+	}
+
+	.jezici {
+		position: absolute;
+		right: 70px;
+		top: 25px;
+	}
+
 .nav_mobile, .closebtn{
 	display: block;
 }
+
 .overlay {
   height: 100%;
   width: 0;
@@ -40,7 +52,6 @@
   color: #818181;
   display: block;
   transition: 0.3s;
-  padding-left: 60%;
 }
 
 .overlay a:hover, .overlay a:focus {
@@ -70,15 +81,26 @@
   	margin-top: 20px;
   	margin-right: 30px;
   }
+.dropbtn_j {
+	width: 50px;
+	padding:3px 5px;
+}
+.dropdown-content_j {
+	width: 70px;
+}
 
  #pocetna{
  	background-position-x: 50%;
  	min-height: 350px;
  }
- 
+ #newsletter{
+ 	min-height: 165px;
+ }
+
  #newsletter h2{
- 	padding-left: 10px;
- 	padding-right: 10px;
+ 	padding-left: 0px;
+ 	padding-right: 0px;
+ 	width: 100%;
  	text-align: center;
  
  }
@@ -96,22 +118,70 @@
 	transform: translateX(-50%);
 }
 
-#boxes {
-	width: 90%;
-}
-#boxes .box {
-	float: none;
+#kratki_opis .naslov_opisa{
 	width: 100%;
-	margin: auto;
-	margin-bottom: 20px;
-	min-height: 625px;
+	float: none;
 }
-#boxes .box img {
-	height: 250px;
+.naslov_opisa h2 .i{
+	font-size: 35px;
+}
+#kratki_opis .naslov_opisa h2{
+	padding-top: 10px;
+	font-size: 30px;
+}
+#kratki_opis .opis_opis {
+	width: 100%;
+	float: none;
+}
+#kratki_opis .opis_opis p {
+	margin:auto;
+}
+#komplet_opremanje p {
+	width: 90%;
+	float: none;
+	margin: auto;
+}
+#komplet_opremanje h2 {
+	font-size: 28px;
+	width: 100%;
+}
+#komplet_opremanje ul {
+	width: 70%;
+	margin: auto;
+	margin-top: 20px;
+	float: none;
+	padding: 0;
+	padding-bottom: 20px;
+}
+#komplet_opremanje h3 {
+	width: 90%;
+	margin: auto;
+	margin-top: 20px;
+}
+#ideal_kupovina{
+	min-height: 100vh;
+}
+#ideal_kupovina .kupovina {
+	width: 100%;
+	float: none;
+}
+#ideal_kupovina button {
+	margin-top: 40px;
+}
+#ideal_kupovina h2 {
+	width: 95%;
+	margin-top: 20px;
+	margin-left: 0;
+	text-align: center;	
+}
+#ideal_kupovina img {
+	width: 100%;
+	margin: 0;
+	border-radius: 0;
 }
 
 #pomoc {
-	margin-top: 40px;
+	margin-top: 10px;
 }
 #pomoc .box {
 	float: none;
@@ -125,63 +195,156 @@
 	display: none;
 }
 
+
+/*o namaa*/
+
+.godina_firma {
+	float: none;
+	margin-left: 0;
+}
+.o_nama_linija{
+	float: none;
+	margin: 10px 0 10px 25%;
+	width: 50%;
+}
+.naslov_o_nama{
+	height: 250px;
+}
+.o_nama_naslov{
+	float: none;
+	margin: 0;
+	margin-bottom: 5px;
+}
+.naslov_o_nama h1{
+	padding-top: 70px;
+}
+.godina_firma_desno {
+	float: none;
+}
+.o_idealu_opis{
+	width: 100%;
+}
+.o_idealu_opis h1 {
+	margin-top: 20px;
+}
+.o_idealu_opis p {
+	width: 80%;
+}
+.posvecenost{
+	width: 100%;
+}
+
 /*Proizvodi*/
 
-#main_proizvodi #kuhinje{
+.zasebni_proizvod{
+	width: 100%;
+	float: none;
+	margin-left: 0;
+}
+
+.zasebni_proizvod img:hover{
+	 transform: scale(1);
+}
+
+
+
+#naslovna_proizvoda{
+	height: 400px;
+}
+
+
+
+
+aside{
+	display: none;
+}
+#main_proizvodi h1 {
+	width: 90%;
+	margin: auto;
+	margin-top: 10px;
+}
+
+.card {
+	max-width: 90%;
+	margin: auto;
+	float: none;
+}
+
+#main_proizvodi{
 	width: 100%;
 }
-#kuhinje .slike {
+.prva_box{
+	margin-top: 30px;
+}
+#main_proizvodi .kategorije_izbor{
+	text-transform: uppercase;
+	opacity: 0.7;
+	font-weight: bold;
+}
+.dropbtn {
+  background-color: #e8491d;
+  color: white;
+  padding: 16px;
+  width: 90%;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: left;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 20px;
+  margin-top: 30px;
+  top: 0;
+  left: 0px;
+  width: 100%;
+}
+
+.dropdown-content {
+  display: none;
+  width: 90%;
+  margin: auto;
+  margin-bottom: 10px;
+  font-weight: bold;
+  opacity: 0.7;
+  position: relative;
+ 	border: 1px solid;
+ 	border-radius:5px; 
+  background-color: #f1f1f1;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  text-align: left;
+}
+
+.dropdown-content a {
+  color: black;
+  padding:12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown a:hover {
+	background-color: #ddd;
+}
+
+.show {display: block;}
+.dropdown-content .trenutno {
+	background-color: #e8491d;
+	opacity: 1;
+	color: #fff;
+}
+h2.dodati_mobitel{
+	text-align: left;
 	width: 90%;
 	margin: auto;
-	float: none;
+	margin-bottom: 15px;
 }
-#kuhinje .desc_kuhinje {
-	width: 90%;
-	margin: auto;
-	float: none;
-}
-#main_proizvodi #ormari{
-	width: 100%;
-	margin-bottom: 30px;
-}
-#ormari .slike {
-	width: 90%;
-	margin: auto;
-	margin-bottom: 20px;
-	float: none;
-}
-#ormari .desc_kuhinje {
-	width: 90%;
-	margin: auto;
-	float: none;
-}
-#main_proizvodi #komode{
-	width: 100%;
-}
-#komode .slike {
-	width: 90%;
-	margin: auto;
-	float: none;
-}
-#komode .desc_kuhinje {
-	width: 90%;
-	margin: auto;
-	float: none;
-}
-#main_proizvodi #ostalo{
-	width: 100%;
-	margin-bottom: 30px;
-}
-#ostalo .slike {
-	width: 90%;
-	margin: auto;
-	margin-bottom: 20px;
-	float: none;
-}
-#ostalo .desc_kuhinje {
-	width: 90%;
-	margin: auto;
-	float: none;
+.newsletter_main{
+	margin-top: 50px;
 }
 /*KONTAKT*/
 
@@ -229,8 +392,95 @@
 #pomoc_k{
 	margin-top: 470px;
 }
+
+/*artiKLI ZASEBNO*/
+
+#slika_kuhinje {
+	width: 100%;
+	margin-top: 0;
+}
+#slika_kuhinje img {
+	height: 250px;
+	width: 100%;
+	margin:0;
+}
+.o_kuhinji {
+	width: 100%;
+	float: none;
+}
+.o_kuhinji h2 {
+	padding-left: 15px;
+	padding-top: 175px;
+}
+.o_kuhinji h3 {
+	padding-left: 15px;
+}
+.o_kuhinji p {
+	padding-left: 15px;
+}
+.cijena_kuhinje {
+	width: 100%;
+	float: none;
+	border: 0;
+	min-height: unset;
+}
+.cijena_kuhinje h2 {
+	padding-left: 15px;
+	margin-top: 15px;
+}
+.cijena_kuhinje button {
+	margin-left: 15px;
+	width: 90%;
+	margin-top: 10px;
+}
+.cijena_kuhinje form {
+	width: 85%;
+	margin-left: 15px;
+}
+.card-carousel .my-card{
+	width: 270px;
+}
+.card-carousel .my-card img {
+	width: 250px;
+}
+#slike_ponude{
+}
+#slike_ponude h2 {
+	padding-left: 7%;
+	width: 70%;
+}
+
+#main_narudzba h3 {
+	float: none;
+}
+#main_narudzba .h3_podaci{
+	padding-left: 5%;
+}
+#main_narudzba .h3_proizvod{
+	padding-left: 0%;
+}
+#main_narudzba #forma_podaci {
+	width: 90%;
+}
+#forma_podaci input{
+	width: 90%;
+}
+#forma_podaci textarea{
+	width: 90%;
+	float: none;
+	margin-left: 3%;
+}
+#forma_podaci input[type="submit"]{
+	width: 100%;
+	margin-top: 10px;
+	float: none;
+	margin-right: 0;
+	margin-left: 1%;
+}
+
 footer{
 	height: 400px;
+	font-size: 15px;
 	}
 	footer ul {
 		margin: 0;
@@ -239,11 +489,20 @@ footer{
 	footer img {
 		width: 100px;
 		height: 100px;
-		left: 5%;
+		left: 3%;
 	}
 	footer .d_mreze {
-		left: 15%;
+		left: 10%;
 		top: 5%;
+	}
+	footer ul li {
+		padding-left: 0;
+	}
+	footer ul li a{
+		font-size: 21px;
+	}
+	footer .r_vrijeme li {
+		font-size: 18	px;
 	}
 	footer .r_vrijeme{
 		top: 40%;
@@ -264,4 +523,10 @@ footer{
 	}
 
 
+}
+
+/*engleski*/
+
+.show_e{
+	display: block;
 }
